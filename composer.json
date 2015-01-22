@@ -1,5 +1,5 @@
 {
-  "name": "zflabs/zflabs-odm-fixture",
+  "name": "zflabs/odm-fixture",
   "description": "Module to generate fixture with Doctrine ODM",
   "type": "library",
   "license": "MIT",
