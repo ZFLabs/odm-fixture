@@ -9,7 +9,7 @@ Installation
 To install is quite simple, add the **composer.json:**
 
 ```
-    "zflabs/zflabs-odm-fixture", "dev-master"
+    "zflabs/odm-fixture", "dev-master"
 ```
 
 Next step is to update the composer
