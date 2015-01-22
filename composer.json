@@ -1,0 +1,37 @@
+{
+  "name": "zflabs/zflabs-odm-fixture",
+  "description": "Module to generate fixture with Doctrine ODM",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "module",
+    "zf2",
+    "ZFLabs",
+    "fixture"
+  ],
+  "homepage": "https://github.com/juizmill",
+  "authors": [
+    {
+      "name": "Jesus Vieira",
+      "email": "jesusvieiradelima@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "zendframework/zendframework": "2.3.*",
+    "doctrine/doctrine-mongo-odm-module": "0.8.*",
+    "doctrine/data-fixtures": "dev-master"
+  },
+  "minimum-stability": "dev",
+  "require-dev": {
+    "phpunit/phpunit": "dev-master"
+  },
+  "suggest": {
+    "zendframework/zend-developer-tools": "zend-developer-tools if you want to profile operations executed by the ORM during development"
+  },
+  "autoload": {
+    "psr-0": {
+      "ZFLabsODMFixture\\": "src/"
+    }
+  }
+}
