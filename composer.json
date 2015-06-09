@@ -18,8 +18,8 @@
   ],
   "require": {
     "php": ">=5.4",
-    "zendframework/zendframework": "2.3.*",
-    "doctrine/doctrine-mongo-odm-module": "0.8.*",
+    "zendframework/zendframework": "~2.4",
+    "doctrine/doctrine-mongo-odm-module": "^0.9.0@dev",
     "doctrine/data-fixtures": "dev-master"
   },
   "minimum-stability": "dev",
