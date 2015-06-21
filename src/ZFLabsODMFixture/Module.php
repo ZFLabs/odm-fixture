@@ -63,17 +63,17 @@ class Module implements
         $console->writeLine('Options:', ColorInterface::YELLOW);
         $console->write(' --purge', ColorInterface::GREEN);
         $console->write('   ');
-        $console->writeLine('Remove todos os registros anteriores.',  ColorInterface::WHITE);
+        $console->writeLine('Remove all previous records.',  ColorInterface::WHITE);
 
         $console->writeLine('Commands:', ColorInterface::YELLOW);
 
         $console->write('   load', ColorInterface::GREEN);
         $console->write('   ');
-        $console->writeLine('Carrega todas as fixtures.', ColorInterface::WHITE);
+        $console->writeLine('Loads all fixtures.', ColorInterface::WHITE);
 
         $console->write('   check', ColorInterface::GREEN);
         $console->write('   ');
-        $console->writeLine('Mostra todas as fixtures para carregar.', ColorInterface::WHITE);
+        $console->writeLine('Shows all fixtures to load.', ColorInterface::WHITE);
         $console->writeLine();
 
         return $console;
