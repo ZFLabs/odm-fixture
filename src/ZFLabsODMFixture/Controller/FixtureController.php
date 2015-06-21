@@ -25,28 +25,22 @@ class FixtureController extends AbstractConsoleController
 
         switch ($request) {
             case $request->getParam('load'):
-
-                $console->writeLine('Aplicando Fixtures', ColorInterface::RED);
-
+                $console->writeLine('Loading fixtures', ColorInterface::RED);
                 $purger = new MongoDBPurger();
                 $executor = new MongoDBExecutor($entityManager , $purger);
 
                 foreach($fixtures_path['zflabs-odm-fixture'] as $key => $path){
-
                     $loader->loadFromDirectory($path);
                     $fixtures = $loader->getFixtures();
 
                     foreach($fixtures as  $value){
-
                         if($request->getParam('purge')) $executor->purge();
                         $executor->load($entityManager, $value);
 
                         $console->write(get_class($value), ColorInterface::BLUE);
                         $console->writeLine('[OK]', ColorInterface::BLUE);
                     }
-
                 }
-
                 break;
             case $request->getParam('check'):
 
@@ -58,11 +52,8 @@ class FixtureController extends AbstractConsoleController
                     foreach($fixtures as $value){
                         $console->writeLine(get_class($value), ColorInterface::BLUE);
                     }
-
                 }
-
                 break;
         }
-
     }
 }
