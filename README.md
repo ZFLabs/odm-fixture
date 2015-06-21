@@ -33,5 +33,5 @@ In module.config.php you should inform the folder where your fixtures, for examp
 To rotate the fixture use the terminal command:
 
 ```
-    vendor/bin/ZFLabs orm-fixture load
+    vendor/bin/ZFLabs odm-fixture load
 ```
